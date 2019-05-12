@@ -4,8 +4,8 @@ function back(){
 }
 $(function(){
     // var cookie=document.cookie.split(';');
-    var cookie=document.cookie;
-    console.log(cookie);
+    var c=document.cookie;
+    console.log(c);
     
     $.get('./../data/customers.json',function(data){
         for(var i in data){
