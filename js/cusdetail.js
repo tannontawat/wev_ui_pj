@@ -3,7 +3,10 @@ function back(){
     document.cookie=null;
 }
 $(function(){
-    var cookie=document.cookie.split(';');
+    // var cookie=document.cookie.split(';');
+    var cookie=document.cookie;
+    console.log(cookie);
+    
     $.get('./../data/customers.json',function(data){
         for(var i in data){
            var cus=data[i];
