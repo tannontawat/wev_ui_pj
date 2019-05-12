@@ -3,11 +3,11 @@ function back(){
     // document.cookie=null;
 }
 $(function(){
-    var cookie=document.cookie.split(';');
+    var c=document.cookie;
     $.get('./../data/customers.json',function(data){
         for(var i in data){
            var cus=data[i];
-            if(!(cus.customerID.localeCompare(cookie[2]))){
+            if(!(cus.customerID.localeCompare(c))){
                 $('#cus_id').val(cus.customerID);
                 $('#com_name').val(cus.companyName);
                 $('#contact_name').val(cus.contactName);
