@@ -14,11 +14,15 @@ $(function(){
                 chpage();
             }
             else{
-                
+                $('#alert').empty();
+                var text='Incorrect Username or Password!!<br>Please try again.'
+                $('#alert').append(text);
             }
         }
         else{
-            
+            $('#alert').empty();
+            var text='Incorrect Username or Password!!<br>Please try again.'
+            $('#alert').append(text);
         }
     }
 });
