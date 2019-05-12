@@ -9,10 +9,16 @@ $(function(){
     function login(){
         var email=$('#InputEmail').val();
         var password=$('#InputPassword').val();
-        if(!(email.localeCompare('admin@nw.com'))){
-            if(!(password.localeCompare('12345**')&&password.localeCompare(''))){
+        if(email=='admin@nw.com'){
+            if(password=='12345**'&&password!=''){
                 chpage();
             }
+            else{
+                
+            }
+        }
+        else{
+            
         }
     }
 });
